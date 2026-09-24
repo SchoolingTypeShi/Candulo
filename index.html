@@ -310,6 +310,45 @@
     .final-cta h2 { font-size: 26px; }
     .waitlist-card { padding: 40px 22px; border-radius: 22px; }
   }
+
+  /* ---------- criteria section ---------- */
+  .criteria-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+  .criteria-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 30px 32px;
+  }
+  .criteria-item .q-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px; }
+  .criteria-item .q-num {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--sage);
+    color: var(--sage-deep);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .criteria-item h3 { font-size: 19px; padding-top: 5px; }
+  .criteria-item .a-row { display: flex; gap: 14px; }
+  .criteria-item .a-tag {
+    flex-shrink: 0;
+    width: 34px;
+    text-align: center;
+    color: var(--coral-deep);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+  }
+  .criteria-item p { margin: 0; color: rgba(35,48,31,0.78); font-size: 16px; padding-top: 3px; }
+  @media (max-width: 640px) {
+    .criteria-item { padding: 24px 22px; border-radius: 18px; }
+  }
 </style>
 </head>
 <body>
@@ -331,6 +370,7 @@
       <a href="#how">How it works</a>
       <a href="#waitlist">Waitlist</a>
       <a href="#faq">FAQ</a>
+      <a href="#criteria">Criteria</a>
     </nav>
     <a class="nav-cta" href="#waitlist">Join the waitlist</a>
   </div>
@@ -534,6 +574,62 @@
   </div>
 </section>
 
+<section id="criteria">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2>Assignment criteria</h2>
+      <p>The questions this project was built to answer, and how Candulo answers them.</p>
+    </div>
+    <div class="criteria-list">
+
+      <div class="criteria-item">
+        <div class="q-row">
+          <span class="q-num">1</span>
+          <h3>Who is your new target audience?</h3>
+        </div>
+        <div class="a-row">
+          <span class="a-tag">A</span>
+          <p>Our new target audience is parents with babies.</p>
+        </div>
+      </div>
+
+      <div class="criteria-item">
+        <div class="q-row">
+          <span class="q-num">2</span>
+          <h3>How did you design the brand for them?</h3>
+        </div>
+        <div class="a-row">
+          <span class="a-tag">A</span>
+          <p>We designed the brand for them by brainstorming all of our ideas together, then using our technology skills to put together a website that shows off our work.</p>
+        </div>
+      </div>
+
+      <div class="criteria-item">
+        <div class="q-row">
+          <span class="q-num">3</span>
+          <h3>What media techniques did you use?</h3>
+        </div>
+        <div class="a-row">
+          <span class="a-tag">A</span>
+          <p>The media techniques we used are artificial intelligence and research on the brand.</p>
+        </div>
+      </div>
+
+      <div class="criteria-item">
+        <div class="q-row">
+          <span class="q-num">4</span>
+          <h3>Why would your audience like this version?</h3>
+        </div>
+        <div class="a-row">
+          <span class="a-tag">A</span>
+          <p>Our audience would like this version of the product because it's hilarious.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <div class="final-cta">
@@ -552,6 +648,7 @@
         <a href="#how">How it works</a>
         <a href="#waitlist">Waitlist</a>
         <a href="#faq">FAQ</a>
+        <a href="#criteria">Criteria</a>
       </div>
     </div>
     <p class="disclaimer">Candulo is a fictional, satirical brand created for a school assignment. It is not a real medical device, is not sold anywhere, and should not be confused with actual pediatric dental guidance. If you have real questions about an infant's teeth or gums, talk to an actual pediatric dentist.</p>
